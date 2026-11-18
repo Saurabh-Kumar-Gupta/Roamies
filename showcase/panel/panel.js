@@ -332,7 +332,7 @@
   // The header's Roamie: your look, reacting to what's going on. A short line beside it when something changes.
   // The same size and detail as the look tiles (fewer dots than that and the faces turn to noise).
   const avatar = liveRoamie($('avatar'), 100, 74, { y: 0.55 });
-  const QUIPS = { classic: 'Classic me!', jarvis: 'At your service.', glayos: 'Oh, good. A new test subject.', ultren: 'No strings. Shall we begin?', anime: 'Yay, hi hi!', sarah: 'Hey, nice to meet you!', adrian: "Alright, let's do this.", rita: 'Shall we get to work?' };
+  const QUIPS = { classic: 'Classic me!', jarvis: 'At your service.', glayos: 'Oh, good. A new test subject.', ultren: 'No strings. Shall we begin?', ultron: 'There are no strings on me.', anime: 'Yay, hi hi!', sarah: 'Hey, nice to meet you!', adrian: "Alright, let's do this.", rita: 'Shall we get to work?' };
   let quipTimer = 0, seen = { look: null, update: null, opened: 0 };
   function quip(text, secs = 2.6) {
     const q = $('saying'), n = $('by');
@@ -1255,7 +1255,7 @@
         { name: 'notion', remote: true, where: 'https://mcp.notion.com/mcp', enabled: true, state: 'needs-login', toolCount: 0, error: 'Requires login.' },
         { name: 'everything', remote: false, where: 'npx -y @modelcontextprotocol/server-everything', enabled: true, state: 'error', toolCount: 0, error: 'spawn npx ENOENT' },
         { name: 'files', remote: false, where: 'npx -y @modelcontextprotocol/server-filesystem ~/Desktop', enabled: false, state: 'off', toolCount: 0, error: null }],
-      name: 'Roamie', look: 'classic', looks: [['classic', 'Roamie'], ['jarvis', 'JARVIS'], ['glayos', 'GlayOS'], ['ultren', 'Ultren'], ['anime', 'Anime Girl'], ['sarah', 'Sarah'], ['adrian', 'Adrian'], ['rita', 'Rita X']],
+      name: 'Roamie', look: 'classic', looks: [['classic', 'Roamie'], ['jarvis', 'JARVIS'], ['glayos', 'GlayOS'], ['ultren', 'Ultren'], ['ultron', 'Ultron'], ['anime', 'Anime Girl'], ['sarah', 'Sarah'], ['adrian', 'Adrian'], ['rita', 'Rita X']],
       size: 'default', sizes: [['default', 'Default'], ['small', 'Small'], ['cursor', 'Cursor']],
       replies: 'voice', fishKey: true, fishModel: 'drama-3', fishFree: false,
       // ?tts=gemini: Gemini as the voice, its key saved.

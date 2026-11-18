@@ -397,5 +397,7 @@
     },
   });
 
-  R.people = { anime: person('anime'), sarah: person('sarah'), adrian: person('adrian'), rita: person('rita'), ultren: person('ultren'), glayos: person('glayos'), ken: person('ken') };
+  // Fork: Ultron wears Ultren's drawing.
+  for (const T of [ART, EYES, MOUTHS]) if (T.ultren && !T.ultron) T.ultron = T.ultren;
+  R.people = { anime: person('anime'), sarah: person('sarah'), adrian: person('adrian'), rita: person('rita'), ultren: person('ultren'), ultron: person('ultron'), glayos: person('glayos'), ken: person('ken') };
 })();
